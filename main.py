@@ -13,11 +13,11 @@ def job():
     print("1) NASA radar images \n 2) Cameras \n 3) Population location data")
     ch=int(input("Enter choice: "))
     if ch==1:
-        job="NASA radar images\\"
+        job="NASA radar images"
     elif ch==2:
-        job="Cameras\\"
+        job="Cameras"
     elif ch==3:
-        job="Population location data\\"
+        job="Population location data"
     else:
         print("Error-Wrong choice entered. Please try again.")
     return job
@@ -26,16 +26,17 @@ def cntryn():
     global job
     cntry=""
     adqry=""
-    print("1) United States \n 2) Italy")
+    print("1) United States \n2) Italy")
     c=int(input("Select a country"))
+    print(c)
     if c == 1:
-        cntry="US\\"
+        cntry="US"
     elif c == 2:
-        cntry="Italy\\"
+        cntry="Italy"
     else:
         print("Error-Wrong choice entered. Please try again.")
-        adqry = job + "\\" + cntry
-    return adqry
+    adqry = job + cntry
+    return adqrya
 def city():
     addrs=""
     cty=""
@@ -55,7 +56,7 @@ def city():
         cty="Rome"
     else:
         print("Error-Wrong choice entered. Please try again.")
-    addrs = cntry + "\\" + cty
+    addrs = cntry + cty
     return addrs
 
 job = job()
