@@ -23,6 +23,6 @@ These are the following commands to be executed on your cmd to install the requi
 3. Needs to save time and date stamps along with the pictures
 <hr>
 <h3><b><u>Contributors:</u></b></h3>
--<a href="https://github.com/Wingspan762">Wingspan762</a>
+-<a href="https://github.com/Wingspan762">Wingspan762</a><br>
 -<a href="https://github.com/isikkiymac">isikkiymac</a>
 <hr/>
