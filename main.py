@@ -1,45 +1,40 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 29 10:01:02 2021
-
-@author: kiyisi.24
-"""
-import cv2
-import matplotlib.pyplot as plt
-def job():
-    global addrs
+def jobs():
     job =""
     print("1) NASA radar images \n 2) Cameras \n 3) Population location data")
     ch=int(input("Enter choice: "))
     if ch==1:
-        job="NASA radar images\\"
+        job="NASA radar images"
     elif ch==2:
-        job="Cameras\\"
+        job="Cameras"
     elif ch==3:
-        job="Population location data\\"
+        job="Population location data"
     else:
         print("Error-Wrong choice entered. Please try again.")
-    return job
+    return str(job)
 
 def cntryn():
     global job
+    cty=""
     cntry=""
     adqry=""
-    print("1) United States \n 2) Italy")
+    print("1) United States \n2) Italy")
     c=int(input("Select a country"))
+    print(c)
     if c == 1:
-        cntry="US\\"
+        cntry="US"
     elif c == 2:
-        cntry="Italy\\"
+        cntry="Italy"
     else:
         print("Error-Wrong choice entered. Please try again.")
-        adqry = job + "\\" + cntry
-    return adqry
+    return cntry
+
 def city():
     addrs=""
     cty=""
     global cntry
+    print (cntry)
     if cntry == "US":
         print("1) Los Angeles \n 2)Panama \n 3)Houston")
         c = int(input("Select a a city"))
@@ -55,10 +50,14 @@ def city():
         cty="Rome"
     else:
         print("Error-Wrong choice entered. Please try again.")
-    addrs = cntry + "\\" + cty
-    return addrs
+    print(cty)
+    return cty
 
-job = job()
+job = jobs()
 cntry = cntryn()
-addrs = city()
+cty = city()
+
+loc = str(job + "\\" + cntry + "\\" + cty)
+import subprocess
+subprocess.Popen(f'explorer "{loc}"')
 
