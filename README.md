@@ -7,7 +7,7 @@ This project is a part of the  EO DASHBOARD HACKATHON.<br>
 These are the following commands to be executed on your cmd to install the required Python Packages needed for this project:
  - pip install pyautogui (on Windows) or pip3 install pyautogui (on macOS and Linux
  - pip install schedule
- Install the <a href="https://pythonspot.com/selenium-install/"> Selenium Webdriver for python </a>
+ Install the <a href="https://pythonspot.com/selenium-install/"> Selenium Webdriver for python </a> or pip install selenium
 <h3><b>Known Bugs:</b></h3>
 1. The Auto Click function does not work<br>
 2. Auto run function hasn't been tested yet<br>
