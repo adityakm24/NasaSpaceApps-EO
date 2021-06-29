@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 29 10:01:02 2021
-
-@author: kiyisi.24
-"""
-import cv2
-import matplotlib.pyplot as plt
-def job():
-    global addrs
+def jobs():
     job =""
     print("1) NASA radar images \n 2) Cameras \n 3) Population location data")
     ch=int(input("Enter choice: "))
@@ -20,10 +12,11 @@ def job():
         job="Population location data"
     else:
         print("Error-Wrong choice entered. Please try again.")
-    return job
+    return str(job)
 
 def cntryn():
     global job
+    cty=""
     cntry=""
     adqry=""
     print("1) United States \n2) Italy")
@@ -35,12 +28,13 @@ def cntryn():
         cntry="Italy"
     else:
         print("Error-Wrong choice entered. Please try again.")
-    adqry = job + cntry
-    return adqrya
+    return cntry
+
 def city():
     addrs=""
     cty=""
     global cntry
+    print (cntry)
     if cntry == "US":
         print("1) Los Angeles \n 2)Panama \n 3)Houston")
         c = int(input("Select a a city"))
@@ -56,10 +50,14 @@ def city():
         cty="Rome"
     else:
         print("Error-Wrong choice entered. Please try again.")
-    addrs = cntry + cty
-    return addrs
+    print(cty)
+    return cty
 
-job = job()
+job = jobs()
 cntry = cntryn()
-addrs = city()
+cty = city()
+
+loc = str(job + "\\" + cntry + "\\" + cty)
+import subprocess
+subprocess.Popen(f'explorer "{loc}"')
 
