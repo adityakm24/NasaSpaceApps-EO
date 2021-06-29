@@ -2,7 +2,7 @@
 <h3><b>Introduction:</h3><b>
 This project is a part of the EO DASHBOARD HACKATHON. Read more about the project <a href="https://www.eodashboardhackathon.org/challenges/economic-impact/urban-societal-behavior-patterns-during-covid-19/teams/the-night-owls-3/project"> here </a>
 <hr/>
-<p>This Python script will alow you to view the below mentioned data country wise: </p>
+<p>This Python script will allows you to view the below mentioned datas country wise: </p>
 <ul>
 <li>NASA radar images</li>
 <li>Cameras</li>
