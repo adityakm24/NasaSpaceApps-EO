@@ -5,7 +5,7 @@ def jobs():
     print("1) NASA radar images \n 2) Cameras \n 3) Population location data")
     ch=int(input("Enter choice: "))
     if ch==1:
-        job="NASA radar images"
+        job="NASA radar images" 
     elif ch==2:
         job="Cameras"
     elif ch==3:
