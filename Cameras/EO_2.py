@@ -173,9 +173,8 @@ def job():
     hollywood_blvd()
     venice_beach()
 
-#schedule.every().day.at("06:00").do(job,'It is 06:00')
+schedule.every().day.at("18:00").do(job,'It is 06:00')
 
-schedule.every(10).seconds.do(job)
 
 while True:
     schedule.run_pending()
